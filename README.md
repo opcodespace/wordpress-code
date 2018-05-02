@@ -1,2 +1,2 @@
 # wordpress-code
-WOrdpress hook, filter and so on
+Wordpress hook, filter and so on
