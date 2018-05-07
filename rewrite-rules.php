@@ -27,13 +27,7 @@ add_action('init', 'myplugin_rewrite_rule', 10, 0);
 
 # on page 
 global $wp_query;
-//echo //$_GET['postcode'];
-// echo "<pre style='margin-top: 100px;'>";
-// print_r($wp_query->query['state']);
-// echo "<br>";
-// print_r($wp_query->query['postcode']);
-// echo "<br>";
-// print_r($wp_query->query['lender']);
-// echo "<br>";
-// print_r($wp_query->query['productname']);
-// echo "</pre>";
+print_r($wp_query->query['state']);
+print_r($wp_query->query['postcode']);
+print_r($wp_query->query['lender']);
+print_r($wp_query->query['productname']);
