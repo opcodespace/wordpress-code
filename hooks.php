@@ -37,3 +37,23 @@ function exclude_this_page($query)
     return $query;
 }
 add_action('pre_get_posts', 'exclude_this_page');
+
+
+/**
+ * Add sub menu on top under dash
+ * @return type
+ */
+function my_plugin_menu() {
+    add_dashboard_page('Webmaster - Log out', 'Logout', 'read', 'webmaster', 'callbackfunc');
+}
+add_action('admin_menu', 'my_plugin_menu');
+
+/**
+ * Callback function
+ * @return type
+ */
+function callbackfunc()
+{
+  wp_logout();
+  wp_redirect( home_url(), 302 );
+}
