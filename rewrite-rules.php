@@ -1,3 +1,4 @@
+<?php
 /**
  * Add rewrite tags
  *
