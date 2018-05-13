@@ -1,3 +1,4 @@
+<?php
 /**
  * Optimize WooCommerce Scripts
  * Remove WooCommerce Generator tag, styles, and scripts from non WooCommerce pages.
