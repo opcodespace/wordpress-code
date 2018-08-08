@@ -1,4 +1,8 @@
 <?php
+# Getting min | max price in variation 
+$product_obj = wc_get_product($product_id);
+if($product_obj->is_type('variable')) $price = $product_obj->get_variation_regular_price( 'max', true );
+echo wc_price($price);
 
 WC_Order::get_checkout_payment_url( $on_checkout )
 
